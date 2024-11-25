@@ -1,0 +1,153 @@
+body {
+    width: 100vw;
+    margin: 0;
+}
+
+button {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.conteyner {
+    position: relative;
+    display: flex;              /* Включаем flexbox */
+    justify-content: center;
+    width: 1280px;
+    height: 100vh;
+    margin: auto;
+    background-color: rgb(224, 224, 224);
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    align-items: center; 
+    width: 500px;
+    height: 70px;
+    background-color: aquamarine;
+    margin: 20px auto;
+    border-radius: 100px;
+    transition: all 0.8s;
+    overflow: visible
+    }
+
+.menu:hover {
+    width: 900px;
+}
+
+.logo {
+    position: absolute;
+    color: white;
+    padding: 8px 20px;
+    background-color: rgb(0, 139, 63);
+    left: 75px;
+    cursor: pointer;
+}
+
+.menuItems {
+    position: absolute;
+    display: flex;
+    align-items: center; 
+    left: 200px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    white-space: nowrap;
+}
+
+.menu:hover .menuItems {
+    opacity: 1;
+}
+
+.menuItems > * {
+    margin-left: 10px;
+}
+
+
+
+.item {
+    background-color: rgba(0, 0, 255, 0);
+    color: black;
+    border: none;
+    padding: 20px 10px;
+    transition: all 0.7s ease;
+}
+
+.item:hover {
+    color: white;
+    background-color: rgba(0, 0, 255, 1);
+}
+
+.menuItems svg {
+    /* top: 50%; */
+    /* left: 50%; Для горизонтального центрирования, если нужно */
+    /* transform: translate(-50%, -50%); */
+    cursor: pointer;
+}
+
+/* .gradient-hover {
+    transition: fill 1s ease;
+}
+
+.gradient-hover:hover .background {
+    fill: url(#gradient01);
+    transition: fill 1s ease;
+} */
+
+.background {
+    position: absolute;
+    transition: opacity 1s ease;
+  }
+  
+  .layer02 {
+    opacity: 0;
+  }
+  
+  .gradient-hover:hover .layer01 {
+    opacity: 0;
+  }
+
+  .gradient-hover:hover .layer02 {
+    opacity: 1;
+  }
+
+.color-hover {
+    transition: fill 0.3s ease;
+    margin-left: 15px;
+}
+
+.color-hover:hover path {
+    fill: #24A1DE;
+    transition: fill 0.3s ease;
+}
+
+.reg {
+    position: absolute;
+    right: 75px;
+}
+
+.butIn {
+    background-color: rgb(214, 230, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.3s;    
+}
+
+.butIn:hover {
+    color: white;
+    background-color: rgb(98, 0, 255);
+}
+
+.butReg {
+    background-color: rgb(232, 255, 250);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.3s;    
+}
+
+.butReg:hover {
+    color: white;
+    background-color: rgb(0, 184, 83);
+}
+
