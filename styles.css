@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    /* margin: 0; */
+    position: relative;
+    overflow-x: hidden; /* Отключает горизонтальный скролл */
+}
+
+.bggg {
+    display: flex;
+    position: absolute;
+    width: 1366px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('img/!0fon.jpg');
+    background-repeat: no-repeat; 
+    height: 390vh;
+    z-index: -5;
+
+}
+
+main {
+    position: absolute;
+    top: 0;
+
+}
+
+.container {
+    position: relative;
+    max-width: 1222px;
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    display: flex;
+    top: 28px;
+    /* left: 72px; */
+    z-index: 5;
+}
+
+.logoImg {
+    width: 92px;
+    height: 31px;
+    background-image: url('img/horseForLogo.svg');
+}
+
+.logoText {
+    position: relative;
+    top: -3px;
+    padding-left: 6px;
+    font-family: 'Golos Text', sans-serif; /* Устанавливаем шрифт */
+    font-size: 17px; /* Размер шрифта */
+    font-weight: 600; /* Толщина шрифта */
+    text-transform: uppercase;
+    line-height: 1.1;
+    color: #595653;
+}
+
+.face {
+    position: relative;
+    height: 700px;
+}
+
+.faceContent {
+    position: relative;
+    top: 124px;
+    /* left: 72px; */
+    max-width: 546px;
+}
+
+.faceContent .faceText:nth-child(3) {
+    text-align: center;
+}
+
+.faceContent .faceText:nth-child(4) {
+    text-align: right;
+    padding-right: 3px;
+}
+
+.faceTextLitle {
+    position: relative;
+    padding-top: 26px;
+    padding-right: 2px;
+    font-family: 'Golos Text', sans-serif; 
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #313131;
+    text-align: center;
+}
+
+
+.faceText {
+    position: relative;
+    font-family: 'Merriweather', serif; 
+    font-size: 60px;
+    font-weight: 400; 
+    text-transform: uppercase;
+    line-height: 1.1;
+    color: #595653;
+}
+
+.buttonHolder {
+    margin-top: 40px;
+    width: 542px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faceButton {
+    padding: 16px 49px 24px 49px;
+    width: 164px;
+    height: 32px;
+    border-radius: 100px;
+    
+    font-family: 'Golos Text', sans-serif; 
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #ffffff;
+    text-align: center;
+    white-space: normal;
+
+    background-color: #1f1f1f;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faceButton:hover {
+    background-color: #FBCE51;
+    color: #1f1f1f;
+    
+}
+
+.faceButton02 {
+    color: #1f1f1f;
+    background-color: rgba(31, 31, 31, 0);    
+    box-shadow: inset 0 0 0 2px #1f1f1f;
+    transition: all 0.3s ease;
+}
+
+.faceButton02:hover {
+    color: #ffffff;
+    background-color: rgba(31, 31, 31, 1);    
+    box-shadow: inset 0 0 0 2px #1f1f1f;
+}
+
+.faceBG {
+    position: absolute;
+    /* z-index: 1; здесь временное для приценливания */
+    background-color: #E9DED4;
+    height: 700px;
+    width: 100%;
+    opacity: 1;
+}
+
+.faceYellowСircle {
+    position: absolute;
+    top: -44px;
+    right: calc(33px + (100vw - 1366px) / 2 - 10px);
+    width: 660px;
+    height: 660px;
+    background-color: #FBCE51;
+    border-radius: 50%;
+}
+
+.faceYellowText {
+    padding: 12px;
+    animation: rotate 70s infinite linear;
+    mix-blend-mode: overlay;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg); /* Начальная позиция: 0 градусов */
+    }
+    to {
+      transform: rotate(360deg); /* Конечная позиция: 360 градусов */
+    }
+  }
+
+@media (min-width: 960px) and (max-width: 1366px) {
+        .faceYellowСircle {
+        right: 33px;
+    }
+  } 
+
+.faceQuinn {
+    background-image: url(img/01quin.png);
+    position: absolute;
+    rotate: -6deg;
+    top: 275px;
+    right: calc(520px + (100vw - 1366px) / 2 - 10px);
+    width: 104px;
+    height: 256px;
+    animation: faceQuinn 5s infinite linear;
+}
+
+@keyframes faceQuinn {
+    0% {
+      transform: rotate(-6deg); /* Начальная позиция: 0 градусов */
+    }
+    50% {
+      transform: rotate(6deg); /* Конечная позиция: 360 градусов */
+    }
+    100% {
+        transform: rotate(-6deg); /* Начальная позиция: 0 градусов */
+    }
+}
+
+  .faceKing {
+    background-image: url(img/01king.png);
+    position: absolute;
+    rotate: 3deg;
+    top: 172px;
+    right: calc(175px + (100vw - 1366px) / 2 - 10px);
+    width: 104px;
+    height: 256px;
+    animation: faceKing 4s infinite linear;
+  }
+
+  @keyframes faceKing {
+    0% {
+      transform: rotate(6deg); /* Начальная позиция: 0 градусов */
+    }
+    50% {
+      transform: rotate(-6deg); /* Конечная позиция: 360 градусов */
+    }
+    100% {
+        transform: rotate(6deg); /* Начальная позиция: 0 градусов */
+    }
+}
+
+  .faceCity {
+    background-image: url(img/01city.png);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1650px;
+    height: 441px;
+  }
+
+  .faceCover {
+    background-image: url(img/01noise.jpg);
+    position: absolute;
+    width: inherit;
+    height: 700px;
+    mix-blend-mode: color-burn;
+  }
+
+.runString {
+    position: relative;
+    /* width: calc(100vw - 20px); */
+    height: 60px;
+    background-color: #F54932;
+    overflow: hidden;
+}
+
+.runStringHolder {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    animation: runSTR 30s linear infinite;
+    width: max-content; 
+
+}
+
+.runStringText {
+    font-family: 'Merriweather', serif; /* Устанавливаем шрифт */
+    font-size: 22px; /* Размер шрифта */
+    font-weight: 300; /* Толщина шрифта */
+    text-transform: uppercase;
+    white-space: nowrap;
+    line-height: 1.1;
+    color: #ffffff;
+
+}
+
+.RunStringDot {
+    position: relative;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: 12px;
+}
+
+@keyframes runSTR {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-50%); 
+    }
+  }
+
+.block02 {
+    width: 1222px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.block02Text {
+    width: 764px;
+    font-family: 'Merriweather', serif; /* Устанавливаем шрифт */
+    font-size: 36px; /* Размер шрифта */
+    font-weight: 400; /* Толщина шрифта */
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: #1f1f1f;
+}
+
+.redBold {
+    color: #F54932;
+    font-weight: 600;
+}
+
+.block02Img {
+    background-image: url(img/02photo.jpg);
+    height: 250px;
+    width: 394px;
+}
+
+.block03 {
+    width: 1222px;
+    height: 527px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 518px 704px; /* Два столбца: левый и правый */
+}
+
+.left {
+    grid-column: 1; /* Занимает первый столбец */
+    grid-row: 1 / 4; /* Растягивается на высоту 3 строк */
+    /* background-color: lightblue; */
+    width: 497px;
+    text-align: center;
+}
+
+/* .right > div { */
+    /* background-color: lightcoral; */
+    /* padding: 10px; */
+    /* margin-bottom: 10px; */
+    /* text-align: center; */
+/* } */
+
+.block03Img {
+    position: absolute;
+    top: -44px;
+    left: -25px;
+    /* opacity: 0.5; */
+}
+.block03Text {
+    width: 764px;
+    font-family: 'Merriweather', serif; /* Устанавливаем шрифт */
+    font-size: 36px; /* Размер шрифта */
+    font-weight: 400; /* Толщина шрифта */
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: #1f1f1f;
+}
+
+.block03Table {
+    position: relative;
+    display: grid;
+    grid-template-columns: 306px 398px; /* Два столбца: левый и правый */
+    grid-auto-rows: auto; /* Автоматическая высота строк */
+    margin-top: 60px;
+}
+
+.block03TableLeft {
+    grid-column: 1; 
+    border-top: 2px solid #D0D0D0; 
+    border-right: 2px solid #D0D0D0;
+    height: 54px;
+
+    font-family: 'Golos Text', sans-serif; 
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #313131;
+    display: flex;
+    align-items: center;
+}
+
+.block03TableLeft:first-child {
+    border-top: 0 ;
+    height: 36px;
+    align-items: flex-start;
+    line-height: 0.9;
+}
+
+.block03TableRight {
+    grid-column: 2;
+    border-top: 2px solid #D0D0D0; 
+    height: 54px;
+
+    font-family: 'Golos Text', sans-serif; 
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #313131;
+
+    padding-left: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.block03TableRight:nth-child(2) {
+    border-top: 0;
+    height: 36px;
+    align-items: flex-start;
+    line-height: 0.9;
+}
+
+.block03tableLeftBrorenText {
+    padding-right: 13px;
+    text-decoration: line-through;
+    text-decoration-color: #F54932;
+}
+
+.block03Hankok {
+    margin-top: 31px;
+    font-family: 'Golos Text', sans-serif; 
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #3057A2;
+}
+
+.block04 {
+    margin-top: 200px;
+}
+
+.block04Text {
+    width: 800px;
+    /* padding: 0 72px; */
+}
+
+h2 {
+    font-family: 'Merriweather', serif; /* Устанавливаем шрифт */
+    font-size: 54px; /* Размер шрифта */
+    font-weight: 400; /* Толщина шрифта */
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: #1f1f1f;
+}
+
+.block04TextBlue {
+    position: absolute;
+    left: 300px;
+    top: 71px;
+    width: 280px;
+    /* margin-top: 31px; */
+    font-family: 'Golos Text', sans-serif; 
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #3057A2;
+}
+
+
+.block04Cards {
+    width: 1222px;
+    /* height: 400px; */
+    margin: 54px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    gap: 18px 20px;
+    
+}
+.block04CardsItem {
+    display: flex;
+    /* border: 1px solid black; */
+    padding: 20px;
+    
+    font-family: 'Golos Text', sans-serif; 
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #313131;
+    text-align: left;
+    background-image: url(img/04phone.jpg);
+}
+
+.block04CardsItem span {
+    display: block;
+    padding-left: 52px;
+}
+
+
+
+   /* Первая строка */
+.block04CardsItem:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+.block04CardsItem:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
+.block04CardsItem:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1 / span 2; /
+}
+
+/* Вторая строка */
+.block04CardsItem:nth-child(4) {
+    grid-column: 1;
+    grid-row: 2;
+}
+.block04CardsItem:nth-child(5) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+/* Третья строка */
+.block04CardsItem:nth-child(6) {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.block04CardsItem:nth-child(7) {
+    grid-column: 2 / 4; /* Объединение средней и правой ячеек в третьем ряду */
+    grid-row: 3;
+}
+
+
+.block04CardsItem:nth-child(5) span {
+    width: 300px;
+}
+
+.block04CardsItem:nth-child(7) span {
+    width: 445px;
+}
+
+.block04CardsItem::before {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.block04CardsItem:nth-child(1)::before {
+    content: '1';
+}
+
+.block04CardsItem:nth-child(2)::before {
+    content: '2';
+}
+
+.block04CardsItem:nth-child(3)::before {
+    content: '3';
+}
+
+.block04CardsItem:nth-child(4)::before {
+    content: '4';
+}
+
+.block04CardsItem:nth-child(5)::before {
+    content: '5';
+}
+
+.block04CardsItem:nth-child(6)::before {
+    content: '6';
+}
+
+.block04CardsItem:nth-child(7)::before {
+    content: '7';
+}
